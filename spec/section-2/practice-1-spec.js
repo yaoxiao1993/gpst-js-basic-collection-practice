@@ -1,5 +1,5 @@
 'use strict';
-const countSameElements = require('../../main/section-2/practice-1');
+const mapcollection = require('../../main/section-2/practice-1');
 
 describe('practice-2-1', () => {
 
@@ -16,8 +16,8 @@ describe('practice-2-1', () => {
   ];
 
   it('把A集合中相同的元素统计出数量', () => {
-
-    const result = countSameElements(collection);
+    let mapcollection1 = new mapcollection();
+    const result = mapcollection1.countSameElements(collection);
 
     expect(result).toEqual([
       {key: 'a', count: 3},
